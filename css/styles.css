@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5c1399;
+  }
+  
+  header {
+    background-color: #5c1399;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #0add9e;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    background-color: #00ffbf;
+  }
+  
+  section#content {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #videosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .video {
+    text-align: center;
+    border: 1px solid #05f5ad;
+    padding: 10px;
+  }
+  
+  #clipsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .clip {
+    text-align: center;
+    border: 1px solid #05f5ad;
+    padding: 10px;
+  }
+  
+  #directosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  #redesSocialesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .redesSociales {
+    text-align: center;
+    border: 1px solid #05f5ad;
+  }
+
+  footer {
+    color: #fff;
+    text-align: center;
+  }
