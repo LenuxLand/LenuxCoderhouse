@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Pre-entrega CoderHouse</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primera Pre-entrega CoderHouse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Contenido en Twitch</h1>
-      </header>
-    
-      <nav>
-        <ul>
-          <li><a href="../pages/inicio.html">Inicio</a></li>
-          <li><a href="../pages/videos.html">Videos</a></li>
-          <li><a href="../pages/clips.html">Clips</a></li>
-          <li><a href="../pages/discord.html">Discord</a></li>
-          <li><a href="../pages/misredes.html">Mis Redes</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Mi Canal de Twitch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/videos.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/clips.html">Clips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/discord.html">Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/misredes.html">Mis Redes</a>
+          </li>
         </ul>
-      </nav>
+      </div>
+    </div>
+  </nav>
     
-      <section id="content">
-        <h2>Redes Sociales</h2>
-        <div id="redesSocialesContainer">
-          <div class="redesSociales">
-            <h3>Twitter</h3>
-            <a href="https://twitter.com/LenuxLand" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-            <p>Sígueme en Twitter para recibir actualizaciones y novedades.</p>
-          </div>
-    
-          <div class="redesSociales">
-            <h3>Instagram</h3>
-            <a href="https://www.instagram.com/lnxlnd" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-            <p>Sígueme en Instagram para ver fotos y momentos detrás de escena.</p>
-          </div>
-    
-          <div class="redesSociales">
-            <h3>YouTube</h3>
-            <a href="https://www.youtube.com/LenuxLand" target="_blank"><img src="youtube.png" alt="YouTube"></a>
-            <p>Suscríbete a mi canal de YouTube para ver mis videos y contenido exclusivo.</p>
-          </div>
-    
-          <!-- Aca puedo agregar mas redes en caso de que necesite espacio -->
-    
+  <div class="container">
+    <div class="intro">
+      <h1>No te pierdas nada</h1>
+      <p>¡Sígueme en mis redes sociales para mantenerte al tanto de mis últimas actualizaciones!</p>
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </section>
-    
-      <footer>
-        <p>&copy;LENUXLAND</p>
-      </footer>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../images/twitter-icon.png" class="d-block w-100" alt="icono-twitter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../images/youtube-icon.png" class="d-block w-100" alt="icono-youtube">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/Instagram-icon.png" class="d-block w-100" alt="icono-instagram">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  </div>
+  <footer>
+    <p>&copy;LENUXLAND</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,99 +1,117 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #5c1399;
-  }
-  
-  header {
-    background-color: #5c1399;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav {
-    background-color: #0add9e;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  nav ul li a:hover {
-    background-color: #00ffbf;
-  }
-  
-  section#content {
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  #videosContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .video {
-    text-align: center;
-    border: 1px solid #05f5ad;
-    padding: 10px;
-  }
-  
-  #clipsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .clip {
-    text-align: center;
-    border: 1px solid #05f5ad;
-    padding: 10px;
-  }
-  
-  #directosContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
 
-  #redesSocialesContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .redesSociales {
-    text-align: center;
-    border: 1px solid #05f5ad;
-  }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  footer {
-    color: #fff;
-    text-align: center;
-  }
+/* Estilo del encabezado */
+header {
+  background-color: #6f00ffd0;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+  background-color: #6f00ffd0;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #000;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #ffffffd0;
+}
+
+/* Estilo de la sección de introducción */
+.intro {
+  background-color: #f8f9fa;
+  padding: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.intro p {
+  margin-bottom: 0px;
+}
+
+/* Estilo de la sección de videos */
+.videos {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.video h4 {
+  margin-top: 10px;
+}
+
+/* Estilo de la sección de clips */
+.clips {
+  background-color: #f8f9fa;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.clips h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.clip {
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.clip h4 {
+  margin-top: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #6f00ffd0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
