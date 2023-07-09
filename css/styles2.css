@@ -82,13 +82,12 @@ footer {
   /* Estilos para las flechas del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #a200ffb0; /* Cambia el color de fondo a tu elección */
+  background-color: #a200ffb0;
 }
 
-/* Estilos adicionales para las flechas del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-  color: #ffffff; /* Cambia el color del icono a tu elección */
-  width: 40px; /* Cambia el ancho de las flechas a tu preferencia */
-  height: 40px; /* Cambia la altura de las flechas a tu preferencia */
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
 }
