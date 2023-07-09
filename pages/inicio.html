@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primera Pre-entrega CoderHouse</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles2.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -38,29 +38,54 @@
 
   <div class="container">
     <div class="intro">
-      <h1>Bienvenido a mi canal de Twitch</h1>
+      <h1 class="text-center">Bienvenido a mi canal de Twitch</h1>
       <p>Aquí encontrarás mis últimos videos, clips destacados y podrás ver mis transmisiones en directo.</p>
       <p>¡Hola a todos! Soy Lenux, streamer desde hace tiempo. Me complace darle la bienvenida a mi página, donde podrás explorar un mundo lleno de diversión y experiencias compartidas. En el mundo de los videojuegos, soy un main ADC en League of Legends desde la temporada 3. A lo largo de los años, he disfrutado jugando en la posición de ADC y he alcanzado el rango de maestro. Durante mis streams, podrás unirte a mí en esta emocionante aventura, donde compartiré consejos, estrategias y momentos destacados de mis partidas en el competitivo. Recientemente me adentré en el mundo de Valorant, aunque soy relativamente nuevo en Valorant, estoy ansioso por mejorar y compartir esta experiencia con todos ustedes. También me gusta compartir momentos de mi vida real a través de la categoría IRL. Te invito a que te unas a mis streams, te diviertas con la comunidad y disfrutes de momentos emocionantes juntos. No olvides seguirme en mis redes sociales para recibir actualizaciones sobre los próximos streams, novedades y oportunidades de interactuar conmigo y otros seguidores. Gracias por visitar mi página y por ser parte de esta increíble aventura.</p>
     </div>
 
-    <div class="videos">
-      <h2>Video Recientes</h2>
-      <div class="videos">
-          <iframe class="videos" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen="true" scrolling="no" height="420" width="720"></iframe>
-          <h4>Título del video</h4>
+    <div class="clips">
+      <h2 class="text-center">Clip Destacado</h2>
+      
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+        </ol>
+        
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="clip d-flex justify-content-center">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://clips.twitch.tv/embed?clip=AlertBreakableFoxPJSugar-yBPb1Jna9HgzDwHJ" frameborder="0" allowfullscreen="true"></iframe>
+              </div>
+            </div>
+            <h4 class="text-center">Título del clip 1</h4>
+          </div>
+          <div class="carousel-item">
+            <div class="video d-flex justify-content-center">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UYs_E_SPWGY" frameborder="0" allowfullscreen="true"></iframe>
+              </div>
+            </div>
+            <h4 class="text-center">Título del video</h4>
+          </div>
+        </div>
+        
+        <!-- Controles -->
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </a>
       </div>
     </div>
 
-    <div class="clips">
-      <h2>Clip Destacado</h2>
-        <div class="clip">
-          <iframe src="https://clips.twitch.tv/embed?clip=CLIP_ID" frameborder="0" allowfullscreen="true" scrolling="no" height="300" width="400"></iframe>
-          <h4>Título del clip</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
+  <footer class="text-center py-4">
     <p>&copy;LENUXLAND</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

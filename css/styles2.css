@@ -35,34 +35,24 @@ body {
   color: #333;
 }
 
-/* Estilos de la sección de videos y clips */
-.videos,
-.clips {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.video,
-.clip {
+/* Estilos de la sección de videos */
+#videosContainer .video {
   margin-bottom: 20px;
 }
 
-.video h2,
-.clip h2 {
-  font-size: 24px;
+.video h3 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.video .video-container,
-.clip .clip-container {
+.video .video-container {
   position: relative;
   padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
   height: 0;
   overflow: hidden;
 }
 
-.video .video-container iframe,
-.clip .clip-container iframe {
+.video .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,4 +64,31 @@ body {
 footer {
   background-color: #f8f9fa;
   color: #333;
+}
+
+.carousel-item {
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item iframe {
+    margin: 0 auto;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 50px;
+  }
+
+  /* Estilos para las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #a200ffb0; /* Cambia el color de fondo a tu elección */
+}
+
+/* Estilos adicionales para las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  color: #ffffff; /* Cambia el color del icono a tu elección */
+  width: 40px; /* Cambia el ancho de las flechas a tu preferencia */
+  height: 40px; /* Cambia la altura de las flechas a tu preferencia */
 }
