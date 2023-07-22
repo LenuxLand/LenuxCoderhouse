@@ -1,13 +1,18 @@
-@charset "UTF-8";
+$primary-color: #4d00c9;
+$secondary-color: #070707;
+$background-color: #f9f8fa;
+$container-background-color: #fff;
+$footer-background-color: #f8f9fa;
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f8fa;
+  background-color: $background-color;
 }
 
 .container {
   margin-top: 30px;
   padding: 20px;
-  background-color: #fff;
+  background-color: $container-background-color;
   border-radius: 5px;
   box-shadow: 0 12px 14px rgba(0, 0, 0, 0.1);
 }
@@ -22,17 +27,17 @@ body {
 }
 
 .navbar {
-  background-color: #f9f8fa;
+  background-color: $background-color;
   border-bottom: none;
 }
 
 .navbar-brand {
   font-weight: bold;
-  color: #070707;
+  color: $secondary-color;
 }
 
 .nav-link {
-  color: #070707;
+  color: $secondary-color;
 }
 
 #videosContainer .video {
@@ -60,8 +65,8 @@ body {
 }
 
 footer {
-  background-color: #f8f9fa;
-  color: #070707;
+  background-color: $footer-background-color;
+  color: $secondary-color;
 }
 
 .carousel-item {
@@ -82,11 +87,9 @@ footer {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(77, 0, 201, 0.69);
+  background-color: rgba($primary-color, 0.69);
 }
 
 .fade-in {
   animation: fadeIn 1s ease-in;
 }
-
-/*# sourceMappingURL=styles.css.map */

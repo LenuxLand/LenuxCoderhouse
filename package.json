@@ -1,0 +1,18 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-sass": "nodemon -e scss -x  \"npm run build-sass\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
