@@ -1,9 +1,9 @@
-// Función para manejar el clic en el botón "PROXIMAMENTE" de las remeras
+// Función
 function handleMerchButtonClick(merchItem) {
     alert("La remera '" + merchItem.name + "' estará disponible próximamente. ¡Estén atentos!");
   }
   
-  // Obtener todos los botones "PROXIMAMENTE" en las remeras
+  // Todos los botones "PROXIMAMENTE" en las remeras
   var merchItems = [
     {
       name: "Remera Logo",
@@ -24,20 +24,18 @@ function handleMerchButtonClick(merchItem) {
   
   var merchButtons = document.querySelectorAll('.merch-item button');
   
-  // Agregar un controlador de eventos a cada botón
   merchButtons.forEach(function(button, index) {
     button.addEventListener('click', function() {
       handleMerchButtonClick(merchItems[index]);
     });
   });
   
-  // Función para manejar el clic en el botón "PROXIMAMENTE" de la tienda en línea
+  // Función para manejar el clic en el botón "PROXIMAMENTE"
   function handleStoreButtonClick() {
     alert("Visita nuestra tienda en línea para más productos y variedad.");
   }
   
-  // Obtener el botón "PROXIMAMENTE" de la tienda en línea
   var storeButton = document.querySelector('.text-center a.btn-primary');
   
-  // Agregar un controlador de eventos al botón de la tienda en línea
+  // Controlador de eventos al botón de la tienda en línea
   storeButton.addEventListener('click', handleStoreButtonClick);
