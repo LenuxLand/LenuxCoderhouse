@@ -1,9 +1,8 @@
-// Función
 function handleMerchButtonClick(merchItem) {
     alert("La remera '" + merchItem.name + "' estará disponible próximamente. ¡Estén atentos!");
   }
   
-  // Todos los botones "PROXIMAMENTE" en las remeras
+  // Botones "PROXIMAMENTE" en las remeras
   var merchItems = [
     {
       name: "Remera Logo",
@@ -30,7 +29,7 @@ function handleMerchButtonClick(merchItem) {
     });
   });
   
-  // Función para manejar el clic en el botón "PROXIMAMENTE"
+  // Función "PROXIMAMENTE"
   function handleStoreButtonClick() {
     alert("Visita nuestra tienda en línea para más productos y variedad.");
   }
