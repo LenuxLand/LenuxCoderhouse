@@ -1,40 +1,32 @@
-// Función para actualizar el precio de una camiseta
-function actualizarPrecio(camiseta, nuevoPrecio) {
-    const precioElement = camiseta.querySelector(".price");
-    precioElement.textContent = `$${nuevoPrecio}`;
-  }
-  
-  // Función para habilitar o deshabilitar los botones de compra
-  function habilitarBoton(camiseta, habilitado) {
-    const boton = camiseta.querySelector("button");
-    boton.disabled = !habilitado;
-  }
-  
-  // Array de objetos que representa las camisetas
-  const camisetas = [
-    {
-      nombre: "Remera Logo",
-      descripcion: "Remera con el logotipo de LENUXLAND. ¡Lúcela mientras juegas o transmites en vivo!",
-      precio: 20,
-      disponible: true
-    },
-    {
-      nombre: "Remera Diseño Especial",
-      descripcion: "Una remera con un diseño especial y exclusivo de LENUXLAND. Ideal para fans y seguidores.",
-      precio: 25,
-      disponible: true
-    },
-    {
-      nombre: "Remera Estampado",
-      descripcion: "Una remera con un estampado único que destaca tu estilo y pasión por los videojuegos.",
-      precio: 30,
-      disponible: false
+// Define una clase para representar camisetas
+class Camiseta {
+    constructor(nombre, descripcion, precio, disponible, categoria) {
+      this.nombre = nombre;
+      this.descripcion = descripcion;
+      this.precio = precio;
+      this.disponible = disponible;
+      this.categoria = categoria;
     }
-  ];
+  
+    comprar() {
+      if (this.disponible) {
+        // Simula una compra con un precio aleatorio entre 10 y 50
+        const nuevoPrecio = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+        this.precio = nuevoPrecio;
+        this.disponible = false;
+      }
+    }
+  }
+  
+  // Crea objetos Camiseta
+  const camisetaLogo = new Camiseta("Remera Logo", "Remera con el logotipo de LENUXLAND. ¡Lúcela mientras juegas o transmites en vivo!", 20, true, "logotipo");
+  const camisetaEspecial = new Camiseta("Remera Diseño Especial", "Una remera con un diseño especial y exclusivo de LENUXLAND. Ideal para fans y seguidores.", 25, true, "especial");
+  const camisetaEstampado = new Camiseta("Remera Estampado", "Una remera con un estampado único que destaca tu estilo y pasión por los videojuegos.", 30, false, "estampado");
   
   // Función para mostrar las camisetas en la página
-  function mostrarCamisetas() {
-    const merchandisingContainer = document.querySelector(".merchandising .row");
+  function mostrarCamisetas(camisetas) {
+    const merchContainer = document.querySelector(".merchandising .row");
+  
     camisetas.forEach((camiseta) => {
       const camisetaHTML = `
         <div class="col-md-4">
@@ -42,34 +34,34 @@ function actualizarPrecio(camiseta, nuevoPrecio) {
             <h3 class="mt-3 mb-2">${camiseta.nombre}</h3>
             <p class="merch-description mb-2">${camiseta.descripcion}</p>
             <p class="price mb-2">$${camiseta.precio}</p>
-            <button class="btn btn-primary" data-camiseta="${camiseta.nombre}">Comprar</button>
+            <button class="btn btn-primary" data-camiseta="${camiseta.nombre}" ${
+        camiseta.disponible ? "" : "disabled"
+      }>Comprar</button>
           </div>
         </div>
       `;
-      merchandisingContainer.innerHTML += camisetaHTML;
+  
+      merchContainer.innerHTML += camisetaHTML;
     });
   }
   
-  // Función para manejar la compra de una camiseta
-  function comprarCamiseta(nombreCamiseta) {
-    const camiseta = camisetas.find((c) => c.nombre === nombreCamiseta);
-    if (camiseta && camiseta.disponible) {
-      // Simular una compra con un precio aleatorio entre 10 y 50
-      const nuevoPrecio = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
-      actualizarPrecio(camiseta, nuevoPrecio);
-      habilitarBoton(camiseta, false); // Deshabilitar el botón después de la compra
-    }
+  // Función para filtrar camisetas por categoría
+  function filtrarCamisetasPorCategoria(categoria) {
+    const camisetas = [camisetaLogo, camisetaEspecial, camisetaEstampado];
+  
+    // Filtrar camisetas por la categoría especificada
+    const camisetasFiltradas = categoria === "todos" ? camisetas : camisetas.filter((camiseta) => camiseta.categoria === categoria);
+  
+    // Limpiar el contenedor de camisetas
+    const merchContainer = document.querySelector(".merchandising .row");
+    merchContainer.innerHTML = "";
+  
+    // Mostrar las camisetas filtradas
+    mostrarCamisetas(camisetasFiltradas);
   }
   
-  // Evento click en los botones de compra
-  document.addEventListener("click", (event) => {
-    if (event.target && event.target.tagName === "BUTTON") {
-      const nombreCamiseta = event.target.getAttribute("data-camiseta");
-      comprarCamiseta(nombreCamiseta);
-    }
-  });
-  
-  // Mostrar las camisetas al cargar la página
+  // Mostrar todas las camisetas al cargar la página
   window.addEventListener("load", () => {
-    mostrarCamisetas();
+    const camisetas = [camisetaLogo, camisetaEspecial, camisetaEstampado];
+    mostrarCamisetas(camisetas);
   });
