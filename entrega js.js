@@ -40,16 +40,10 @@ function handleStoreButtonClick() {
   alert("Visita nuestra tienda en línea para más productos y variedad.");
 }
 
-// Botón "PROXIMAMENTE" de la tienda en línea
-const storeButton = document.querySelector('.text-center a.btn-primary');
-
-// Controlador de eventos al botón de la tienda en línea
-storeButton.addEventListener('click', handleStoreButtonClick);
 
 // Información de los productos de merchandising en el DOM
 function displayMerchandisingItems() {
   const merchandisingContainer = document.getElementById('merchandising-container');
-  merchandisingContainer.innerHTML = '';
 
   merchandisingItems.forEach((item, index) => {
     const merchDiv = document.createElement('div');
