@@ -49,7 +49,7 @@
             <h3 class="mt-3 mb-2">Remera Logo</h3>
             <p class="merch-description mb-2">Remera con el logotipo de LENUXLAND. ¡Lúcela mientras juegas o transmites en vivo!</p>
             <p class="price mb-2">$0</p>
-            <button class="btn btn-primary">PROXIMAMENTE</button>
+            <button class="btn btn-primary add-to-cart-btn" data-name="Remera Logo" data-price="0.00">Agregar al Carrito</button>
           </div>
         </div>
         <div class="col-md-4">
@@ -58,7 +58,7 @@
             <h3 class="mt-3 mb-2">Remera Diseño Especial</h3>
             <p class="merch-description mb-2">Una remera con un diseño especial y exclusivo de LENUXLAND. Ideal para fans y seguidores.</p>
             <p class="price mb-2">$0</p>
-            <button class="btn btn-primary">PROXIMAMENTE</button>
+            <button class="btn btn-primary add-to-cart-btn" data-name="Remera Diseño Especial" data-price="0.00">Agregar al Carrito</button>
           </div>
         </div>
         <div class="col-md-4">
@@ -67,19 +67,27 @@
             <h3 class="mt-3 mb-2">Remera Estampado</h3>
             <p class="merch-description mb-2">Una remera con un estampado único que destaca tu estilo y pasión por los videojuegos.</p>
             <p class="price mb-2">$0</p>
-            <button class="btn btn-primary">PROXIMAMENTE</button>
+            <button class="btn btn-primary add-to-cart-btn" data-name="Remera Estampado" data-price="0.00">Agregar al Carrito</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-      <div class="text-center">
-        <p>¡Visita nuestra tienda en línea para más productos y variedad!</p>
-        <a href="https://www.ejemplo.com/tienda" class="btn btn-primary">PROXIMAMENTE</a>
-      </div>
+  <!-- Contenedor del carrito -->
+  <div class="text-center">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items" class="cart-items">
+    </ul>
+    <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-btn" class="btn btn-primary">Realizar Pedido</button>
+  </div>
 
-    </div>
+  <div class="text-center">
+    <p>¡Visita nuestra tienda en línea para más productos y variedad!</p>
+  </div>
+
+  </div>
   </div>
 
   <footer class="text-center py-4">
@@ -88,5 +96,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../entrega js.js"></script>
+  <script src="../carrito js.js"></script>
 </body>
 </html>
