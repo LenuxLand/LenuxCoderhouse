@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Remera Logo",
+      "description": "Remera con el logotipo de LENUXLAND. ¡Lúcela mientras juegas o transmites en vivo!",
+      "price": "$20",
+      "available": true
+    },
+    {
+      "name": "Remera Diseño Especial",
+      "description": "Una remera con un diseño especial y exclusivo de LENUXLAND. Ideal para fans y seguidores.",
+      "price": "$25",
+      "available": false
+    },
+    {
+      "name": "Remera Estampado",
+      "description": "Una remera con un estampado único que destaca tu estilo y pasión por los videojuegos.",
+      "price": "$18",
+      "available": true
+    }
+  ]
+  

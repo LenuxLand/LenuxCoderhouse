@@ -114,3 +114,17 @@ buscarProductosDisponibles();
 
 // Calcular el precio promedio
 calcularPrecioPromedio();
+
+function cargarDatosDesdeJSON() {
+  return fetch('datos.json')
+    .then(response => response.json())
+    .then(data => {
+      // Datos
+      merchandisingItems = data;
+      displayMerchandisingItems();
+    })
+    .catch(error => console.error('Error al cargar datos:', error));
+}
+
+// Función para cargar datos desde un archivo JSON local
+cargarDatosDesdeJSON();
