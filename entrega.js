@@ -126,5 +126,5 @@ function cargarDatosDesdeJSON() {
     .catch(error => console.error('Error al cargar datos:', error));
 }
 
-// Función para cargar datos desde un archivo JSON local
+// Datos desde un archivo JSON local
 cargarDatosDesdeJSON();
